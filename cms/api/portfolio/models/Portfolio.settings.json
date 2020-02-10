@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "portfolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "thumb": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Title": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "URL": {
+      "unique": true,
+      "type": "string"
+    }
+  }
+}

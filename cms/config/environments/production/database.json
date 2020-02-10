@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "mongoadmin",
+  "connections": {
+    "mongoadmin": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "mongodb+srv://kw2-cms:563402cri@cluster0-1momo.mongodb.net/test?retryWrites=true&w=majority",
+        "port": 27017,
+        "database": "kw2-cms",
+        "username": "kw2-cms",
+        "password": "563402cri"
+      },
+      "options": {
+        "authenticationDatabase": "admin",
+        "ssl": true
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "contato",
+  "info": {
+    "name": "contato",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Titulo": {
+      "unique": true,
+      "type": "string"
+    },
+    "Descricao": {
+      "unique": true,
+      "default": "Descrição",
+      "type": "string"
+    }
+  }
+}

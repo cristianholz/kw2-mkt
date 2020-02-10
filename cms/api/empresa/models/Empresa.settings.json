@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "empresas",
+  "info": {
+    "name": "empresa",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Titulo": {
+      "unique": true,
+      "type": "string"
+    },
+    "Thumb": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Descricao": {
+      "type": "richtext"
+    }
+  }
+}

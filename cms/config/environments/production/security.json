@@ -1,0 +1,46 @@
+{
+  "csrf": {
+    "enabled": false,
+    "key": "_csrf",
+    "secret": "_csrfSecret",
+    "angular": false
+  },
+  "csp": {
+    "enabled": true,
+    "policy": [
+      {
+        "img-src": "'self' http:"
+      },
+      "block-all-mixed-content"
+    ]
+  },
+  "p3p": {
+    "enabled": false,
+    "value": ""
+  },
+  "hsts": {
+    "enabled": true,
+    "maxAge": 31536000,
+    "includeSubDomains": true,
+    "preload": true
+  },
+  "xframe": {
+    "enabled": true,
+    "value": "SAMEORIGIN"
+  },
+  "xss": {
+    "enabled": true,
+    "mode": "block"
+  },
+  "cors": {
+    "enabled": false
+  },
+  "ip": {
+    "enabled": false,
+    "whiteList": [],
+    "blackList": []
+  },
+  "xssProtection": {
+    "enabled": false
+  }
+}
